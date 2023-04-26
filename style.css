@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Podkova&family=Roboto&family=Ubuntu&family=Ysabeau&display=swap');
+
+:root {
+    --color-calm: #1F283D;
+    --color-active: #C92010;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: semi-bold;
+    text-align: center;
+    color: var(--color-calm);
+}
+
+button svg {
+    margin-right: 16px;
+    /* fill: var(--color-calm); */
+}
+
+button svg path, button svg circle:nth-child(1) {
+    fill: var(--color-calm);
+}
+
+button svg rect, button svg circle {
+    stroke: var(--color-calm);
+}
+
+
+.button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+}
+
+.button:hover {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-active);
+}
+
+.button:hover > svg path, button:hover > svg circle:nth-child(1) {
+    fill: var(--color-active);
+}
+
+button:hover > svg rect, button:hover > svg circle {
+    stroke: var(--color-active);
+}
+
+.buttons {
+    display: flex;
+}
