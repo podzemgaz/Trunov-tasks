@@ -19,6 +19,10 @@
     
 }
 
+/* .button, .button > *, .button > * > *, .button > * > * > * {
+    transition: all 0.2s ease-in-out;
+} */
+
 .button svg {
     margin-right: 10px;
     /* fill: var(--color-calm); */
@@ -50,14 +54,18 @@
     color: var(--color-active);
     cursor: pointer;
 }
-
+/* 
 .button:hover > svg path, .button:hover > svg circle:nth-child(1) {
+    fill: var(--color-active);
+} */
+
+.button:hover > svg path {
     fill: var(--color-active);
 }
 
-.button:hover > svg rect, .button:hover > svg circle {
+/* .button:hover > svg rect, .button:hover > svg circle {
     stroke: var(--color-active);
-}
+} */
 
 .buttons {
     display: flex;
