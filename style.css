@@ -10,24 +10,26 @@
     padding: 0;
 }
 
-button {
+.button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: semi-bold;
     text-align: center;
     color: var(--color-calm);
+    transition: all 0.5s;
 }
 
-button svg {
-    margin-right: 16px;
+.button svg {
+    margin-right: 10px;
     /* fill: var(--color-calm); */
+    width: 24px;
 }
 
-button svg path, button svg circle:nth-child(1) {
+.button svg path, .button svg circle:nth-child(1) {
     fill: var(--color-calm);
 }
 
-button svg rect, button svg circle {
+.button svg rect, .button svg circle {
     stroke: var(--color-calm);
 }
 
@@ -38,19 +40,22 @@ button svg rect, button svg circle {
     align-items: center;
 
     height: 50px;
+    margin-right: 30px;
+    text-decoration: none;
 }
 
 .button:hover {
     font-size: 20px;
     font-weight: bold;
     color: var(--color-active);
+    cursor: pointer;
 }
 
-.button:hover > svg path, button:hover > svg circle:nth-child(1) {
+.button:hover > svg path, .button:hover > svg circle:nth-child(1) {
     fill: var(--color-active);
 }
 
-button:hover > svg rect, button:hover > svg circle {
+.button:hover > svg rect, .button:hover > svg circle {
     stroke: var(--color-active);
 }
 
